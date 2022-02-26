@@ -17,9 +17,13 @@ knitr::opts_chunk$set(echo = TRUE)
 source("../source/analysis.R")
 ```
 state with highest jail population: ```r highest_incarceration_num_state```
+
 highest incarceration rate (over population) state: ```r highest_incarceration_rate_state```
+
 year with highest incarceration: ```r highest_year```
+
 ratio of female to male population in jail: ```r gender_ratio```
+
 state with highest juvenile in jail: ```r highest_juvie_state```
 ## Charts
 
