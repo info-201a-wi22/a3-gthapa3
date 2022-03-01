@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Introduction
 
-The data used for these visualizations come from the Vera Institute and are important in visualizing trends in incarceration among different races (Black, AAPI, Latinx, Native Americans, and White people). People of color, especially Black Americane, have been treated unjustly in comparison to White people in the criminal justice system, by law enforcement, and in encounters. The chart showing trends of prison population breaks the numbers by race to allow for differences in incarceration rates based on race. I will use another chart to break down total jail population between male and female to analyze the trend over the years. 
+The data used for these visualizations come from the Vera Institute and are important in visualizing trends in incarceration among different races (Black, AAPI, Latinx, Native Americans, and White people). People of color, especially Black Americans, have been treated unjustly in comparison to White people in the criminal justice system, by law enforcement, and in encounters. The chart showing trends of prison population breaks the numbers by race to allow for differences in incarceration rates based on race. I will use another chart to break down total jail population between male and female to analyze the trend over the years. 
 
 ## Summary Information
 Variables I will analyze are the ratio of Black to White people in prison population to compare the differences in incarceration. I will also calculate the ratio of female to male and highest incarceration rates in states to gain insight into locations. I will also look into highest juvenile in jail state and compare it with the state with highest jail population to see if they are the same or different.
