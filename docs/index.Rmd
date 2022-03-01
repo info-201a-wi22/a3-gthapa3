@@ -10,41 +10,49 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Introduction
 
-
+The data used for these visualizations come from the Vera Institute and are important in visualizing trends in incarceration among different races (Black, AAPI, Latinx, Native Americans, and White people). People of color, especially Black Americane, have been treated unjustly in comparison to White people in the criminal justice system, by law enforcement, and in encounters. The chart showing trends of prison population breaks the numbers by race to allow for differences in incarceration rates based on race. I will use another chart to break down total jail population between male and female to analyze the trend over the years. 
 
 ## Summary Information
+Variables I will analyze are the ratio of Black to White people in prison population to compare the differences in incarceration. I will also calculate the ratio of female to male and highest incarceration rates in states to gain insight into locations. I will also look into highest juvenile in jail state and compare it with the state with highest jail population to see if they are the same or different.
 ```{r, include = FALSE}
 source("../source/analysis.R")
 ```
-state with highest jail population: ```r highest_incarceration_num_state```
+Ratio of Black to White people in prison: ```r black_white_ratio```
 
-highest incarceration rate (over population) state: ```r highest_incarceration_rate_state```
+Highest incarceration rate (over population) state: ```r highest_incarceration_rate_state```
 
-year with highest incarceration: ```r highest_year```
+Year with highest incarceration: ```r highest_year```
 
-ratio of female to male population in jail: ```r gender_ratio```
+Ratio of female to male population in jail: ```r gender_ratio```
 
-state with highest juvenile in jail: ```r highest_juvie_state```
+State with highest juvenile in jail: ```r highest_juvie_state```
+
 ## Charts
 
 ### Trends Over Time
 
+This chart shows the breakdown of races over the years based on prison population. I included this chart to compare incarceration in prison for each race. From this chart, Black Americans have the highest population in prison compared to any other race, and AAPI and Natives having the least.
 
 ```{r, echo=FALSE}
-source("../source/trendsChart.R")
-chart
+source("../source/analysis.R")
+chart1
 ```
 
 ### Comparing Two Variables
 
-```{r, echo=FALSE}
+This chart compares female to male total incarceration population over the years. This chart illustrates the difference between male and female population in jail and shows that the vast majority of people in jail are men. Numbers for both genders have also increased overall. 
 
+```{r, echo=FALSE}
+source("../source/analysis.R")
+chart2
 ```
 
 ## Map
 
-```{r, echo=FALSE}
+This map breaks down population of incarceration in each state. I wanted to look at the total incarceration nationally and compare by states and regions. It's noticeable that states with the highest population, such as California and Texas have the highest number of people in jail. More states in the east region and southern region also seem to have higher jail population.
 
+```{r, echo=FALSE}
+source("../source/analysis.R")
+map
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
